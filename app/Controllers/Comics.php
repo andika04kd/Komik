@@ -13,9 +13,21 @@ class Comics extends BaseController
     }
     public function index()
     {
+        $keyword = $this->request->getVar('keyword');
+        $currentPage = $this->request->getVar('page_comic') ? $this->request->getVar('page_comic') : 1;
+
+        if ($keyword) {
+            $this->ComicModel->like('title', $keyword)
+                             ->orLike('author', $keyword)
+                             ->orLike('publisher', $keyword);
+        }
+
         $data = [
             'title' => 'Comics List',
-            'comic' => $this->ComicModel->getComic()
+            'comic' => $this->ComicModel->paginate(5, 'comic'),
+            'pager' => $this->ComicModel->pager,
+            'keyword' => $keyword,
+            'currentPage' => $currentPage
         ];
 
         return view('comics/index', $data);

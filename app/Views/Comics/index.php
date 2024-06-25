@@ -11,6 +11,14 @@
                     <?= session()->getFlashdata('success'); ?>
                 </div>
             <?php endif; ?>
+
+            <form action="<?= base_url('/comics') ?>" method="get" class="mt-3 mb-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for comics..." name="keyword" value="<?= (isset($keyword)) ? $keyword : '' ?>">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </form>
+
             <table class="table table-hover align-middle">
                 <thead class="table-dark">
                     <tr>
@@ -21,21 +29,23 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php $i = 1; ?>
+                    <?php $i = 1 + (5 * ($currentPage - 1)); ?>
                     <?php foreach ($comic as $c) : ?>
                     <tr>
                         <th scope="row"><?= $i++; ?></th>
-                        <td><img src="/img/<?= $c['cover']; ?>" class="img-thumbnail" alt=""></td>
-                        <td><?= $c['title']; ?></td>
+                        <td><img src="/img/<?= esc($c['cover']); ?>" class="img-thumbnail" alt=""></td>
+                        <td><?= esc($c['title']); ?></td>
                         <td>
-                            <a class="btn btn-primary" href="/comics/<?= $c['slug']; ?>" role="button">Details</a>
+                            <a class="btn btn-primary" href="/comics/<?= esc($c['slug']); ?>" role="button">Details</a>
                         </td>
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
             </table>
+            <?= $pager->links('comic', 'title_pagination') ?>
         </div>
     </div>
 </div>
 
 <?= $this->endSection(); ?>
+
