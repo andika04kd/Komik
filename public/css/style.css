@@ -2,3 +2,322 @@
     width: 200px;
     height: auto;
 }
+
+/* Global styles */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #454F6A;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 20px;
+    color: #4a546e50;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btn_genre ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.btn_genre ul li {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 10px;
+    border: #E3E3E3 solid 1px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .btn_genre ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+.btn_genre_default {
+    background-color: #6F40FE;
+    color: white;
+}
+
+.btn_genre ul li:hover {
+    background-color: #6F40FE;
+    color: white;
+}
+
+.container_comic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin: 30px 0;
+}
+
+.comic_card {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: auto;
+    overflow: hidden;
+}
+
+.comic_img {
+    width: 220px;
+    flex: 1;
+    max-height: 350px;
+    position: relative;
+    display: inline-block;
+}
+
+.comic_img img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.comic_content {
+    margin: 5px;
+}
+
+.comic_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #454F6A;
+    margin: 5px 0;
+}
+
+.icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon_second {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_second {
+    right: 10px;
+    width: 60px;
+    height: 30px;
+    background-color: #6F40FE;
+}
+
+.small_icon {
+    font-size: 14px;
+    margin-left: auto;
+    color: #FFCA28;
+}
+
+.fav_icon {
+    display: flex;
+    align-items: center;
+    color: #454F6A;
+    position: absolute;
+    font-size: 20px;
+}
+
+.icon_category {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+
+}
+
+.rating {
+    font-size: 16px;
+    font-weight: bold;
+    color: #454F6A;
+    margin: 5px 0;
+}
+
+.chapter {
+    font-size: 16px;
+    color: #4182F9;
+    margin: 5px 0;
+}
+
+.btn_genre_card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.btn_genre_card ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none;
+    column-gap: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.btn_genre_card ul li {
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+    border: black solid 1px;
+    border-radius: 20px;
+}
+
+.comic_author {
+    font-size: 12px;
+    color: #454F6A;
+    margin: 5px 0;
+}
+
+.carousel-indicators button.inactive {
+    background-color: #000000;
+}
+
+.carousel-indicators button.active {
+    background-color: #6F40FE;
+}
+
+/* About Us */
+
+.about_content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 30px;
+    background-color: #454F6A;
+    padding: 20px 0;
+}
+
+.about_content_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    background-color: #454F6A;
+    padding: 20px 0;
+}
+
+.about_img {
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 15px 50px 15px 20px;
+}
+
+.about_desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 5px 0;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 10px;
+    max-width: 50%;
+}
+
+/* Contact Us */
+
+.contact_content {
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: #454F6A;
+    padding: 20px;
+    margin: 30px 0 0 0;
+}
+
+.contact_content img {
+    width: 30%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 15px 50px 15px 20px;
+}
+
+.contact_content label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form_group {
+    margin: 15px;
+}
+
+.form_group_input {
+    margin-bottom: 20px;
+}
+
+.contact_content input[type="text"],
+.contact_content input[type="email"],
+.contact_content textarea {
+    width: 100%;
+    padding: 10px 150px 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact_content button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #6F40FE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact_content button[type="submit"]:hover {
+    background-color: #4182F9;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #454F6A;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
