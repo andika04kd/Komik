@@ -8,6 +8,9 @@
 # IMPORTANT
 Install intl and mysqli in your php.ini by removing ";"
 
+# Library installed
+- [Shield] https://shield.codeigniter.com/
+
 ## Server Requirements
 
 PHP version 8.1 or higher is required, with the following extensions installed:
