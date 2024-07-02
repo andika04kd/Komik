@@ -3,6 +3,11 @@
     height: auto;
 }
 
+.navbar-nav .nav-link:hover {
+    background-color: #E3E3E3;
+    color: #000; 
+    }
+
 /* Global styles */
 
 body {

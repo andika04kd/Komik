@@ -6,27 +6,15 @@
     <div class="about_content">
         <img src="/img/staticImg/Judul.png" class="about_img" />
         <p class="about_desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            fugit obcaecati aliquam id, perspiciatis iusto autem rerum qui quia
-            explicabo sequi fuga consequuntur alias laboriosam assumenda deserunt
-            delectus. Modi, hic? Accusamus itaque quo officia blanditiis
-            temporibus saepe dolore! Autem magnam repellat et libero, facere
-            distinctio doloremque doloribus aut necessitatibus ipsum ipsa
-            sapiente, consectetur officia reprehenderit optio cum fugiat suscipit
-            dolorem!
+            Selamat datang di PawRead, destinasi utama bagi para penggemar manga! Semangat kami terhadap komik Jepang mendorong kami untuk menghadirkan manga Jepang terbaru dan terhebat bagi Anda. 
+            Baik Anda penggemar berat atau baru memulai, Anda akan menemukan banyak konten untuk dijelajahi dan dinikmati di sini.
         </p>
     </div>
     <div class="about_content_2">
         <img src="/img/staticImg/Judul.png" class="about_img" />
         <p class="about_desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            fugit obcaecati aliquam id, perspiciatis iusto autem rerum qui quia
-            explicabo sequi fuga consequuntur alias laboriosam assumenda deserunt
-            delectus. Modi, hic? Accusamus itaque quo officia blanditiis
-            temporibus saepe dolore! Autem magnam repellat et libero, facere
-            distinctio doloremque doloribus aut necessitatibus ipsum ipsa
-            sapiente, consectetur officia reprehenderit optio cum fugiat suscipit
-            dolorem!
+            Di PawRead, kami menawarkan banyak koleksi judul manga dari berbagai genre, mulai dari petualangan penuh aksi hingga romansa yang mengharukan.
+            Tim kami berdedikasi untuk menyediakan terjemahan berkualitas tinggi dan rilis terbaru segera setelah tersedia di pasaran Jepang.
         </p>
     </div>
 </div>
